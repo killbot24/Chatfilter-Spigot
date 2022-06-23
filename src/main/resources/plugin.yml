@@ -1,0 +1,16 @@
+name: Chat-Filter
+version: ${project.version}
+main: kineticnetwork.net.chatfilter.ChatFilter
+api-version: 1.12.2
+authors: [killbot24]
+description: Chat filter
+commands:
+ Chatfilter:
+    description: Base command of chat filter
+    usage: /chatfilter
+    permission: Chatfilter.use
+
+ filter:
+   description: only use is to tell ppl hey wrong command
+   usage: /filter
+   permission: Chatfilter.use
