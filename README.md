@@ -12,6 +12,6 @@ Mutes are confirmed player hits this happens when any word is 100% detected in a
   
 ### Config
   The config allows the setting of the url to be shown and the blocked words
-  #  Word,Reason  
+  Word,Reason  
   Example "penguin, he have flipper" 
   This means anytime a player types penguin it will mute them for reason he have flipper
