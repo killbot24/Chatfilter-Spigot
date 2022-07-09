@@ -1,5 +1,5 @@
 # Chatfilter-Spigot
-This program is designed to work on 1.16.5 paper. It will monitor players useing  chat, Signs, Anvils, Messages. These will be either flaged as possible flag or a Mute.
+This program is designed to work on 1.12.2 paper. It will monitor players useing  chat, Signs, Anvils, Messages. These will be either flaged as possible flag or a Mute.
 
 
 ### Possible Flags
