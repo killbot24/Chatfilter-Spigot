@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="chatfilter" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d2461e7-69bb-47fd-b92f-490e7fe12de8" name="Default Changelist" comment="a">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/ChatFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/ChatFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/FileEditor/Reports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/FileEditor/Reports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Anvil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Anvil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Listeners/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/MuteHandler/UnMute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/MuteHandler/UnMute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Notfiy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Notfiy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Util/TextCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/Util/TextCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kineticnetwork/net/chatfilter/config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2BaCpdEBEAVUtM7u0PUerSwZu1W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="E:/kinetic/servers/1.7.10/plugins" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="1.7.10" type="JarApplication">
+      <option name="JAR_PATH" value="E:/kinetic/servers/1.7.10/server.jar" />
+      <option name="WORKING_DIRECTORY" value="E:\kinetic\servers\1.7.10" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d2461e7-69bb-47fd-b92f-490e7fe12de8" name="Default Changelist" comment="" />
+      <created>1657134993413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657134993413</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+</project>

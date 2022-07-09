@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.security.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -17,7 +18,8 @@ public class Reports {
         // ChatFilter.getInstance().getLogger().info("player "+player);
         final File file = new File(ChatFilter.getInstance().getDataFolder().getAbsoluteFile() + "/Warnings", player + ".yml");
         final PrintWriter out = new PrintWriter(new FileWriter(file, true));
-        final String timeStamp = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
+       // final String timeStamp = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
+        String timeStamp = new SimpleDateFormat("dd.MM.yyyy||HH:mm ").format(new java.util.Date());
         if (!file.exists()) {
             try {
                 file.createNewFile();
@@ -42,9 +44,9 @@ public class Reports {
             final List<?> infraction = Files.readAllLines(file.toPath());
             String[] user = new String[infraction.size()];
             user = infraction.toArray(user);
-            sender.sendMessage(ChatColor.GOLD + "Player's infraction");
+            sender.sendMessage(ChatColor.GOLD + "Player's infraction \n");
             for (int i = 0; i < user.length; ++i) {
-                sender.sendMessage(ChatColor.GRAY + user[i]);
+                sender.sendMessage("\n"+ChatColor.GRAY + user[i]);
             }
             myReader.close();
 

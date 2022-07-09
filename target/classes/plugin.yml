@@ -1,5 +1,5 @@
 name: Chat-Filter
-version: ${project.version}
+version: 8.3
 main: kineticnetwork.net.chatfilter.ChatFilter
 api-version: 1.16
 authors: [killbot24]
