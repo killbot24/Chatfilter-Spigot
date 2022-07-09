@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>kineticnetwork.net</groupId>
-    <artifactId>Chat-filter-1.7.10</artifactId>
-    <version>8.3</version>
+    <artifactId>Chat-filter</artifactId>
+    <version>8.4</version>
     <packaging>jar</packaging>
 
     <name>Chat-Filter</name>
