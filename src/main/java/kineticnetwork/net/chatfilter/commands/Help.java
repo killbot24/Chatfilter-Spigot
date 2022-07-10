@@ -1,6 +1,8 @@
 package kineticnetwork.net.chatfilter.commands;
 
 import kineticnetwork.net.chatfilter.ChatFilter;
+import org.apache.commons.lang.StringUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -29,7 +31,7 @@ public class Help implements CommandExecutor {
                 } else if (Commanda.equalsIgnoreCase("unmute")) {
                     unmute unmutecommand = new unmute();
                     unmutecommand.unmute(args[1], ((Player) sender).getPlayer());
-                } else if (Commanda.equalsIgnoreCase("unflag")) {
+                } else if (Commanda.equalsIgnoreCase("unwatch")) {
                     unflag uw = new unflag();
                     uw.unwatch(args[1], ((Player) sender).getPlayer());
                 }

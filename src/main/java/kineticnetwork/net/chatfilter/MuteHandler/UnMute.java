@@ -17,8 +17,6 @@ public class UnMute {
 
     public void unMute(final String player, final Player sender) throws IOException {   //unmutes player
         final File file = new File(ChatFilter.getInstance().getDataFolder().getAbsolutePath(), "Active-mutes.yml");
-        final PrintWriter out = new PrintWriter(new FileWriter(file, true));
-        final Scanner myReader = new Scanner(file);
         final FileWriter fw = new FileWriter(file);
         final BufferedWriter bw = new BufferedWriter(fw);
         try {
@@ -50,13 +48,12 @@ public class UnMute {
             ChatFilter.getInstance().getLogger().info("[Warning] Issue editing file in unmute");
         }
         ChatFilter.getInstance().getLogger().info(ChatColor.GOLD + " " + suspect + ChatColor.DARK_GREEN + " is unmuted");
+
         readmute.Readmute();
     }
 
     public void unwatch(final String player, final Player sender) throws IOException {   //unmutes player
         final File file = new File(ChatFilter.getInstance().getDataFolder().getAbsolutePath(), "ActiveWatch.yml");
-        final PrintWriter out = new PrintWriter(new FileWriter(file, true));
-        final Scanner myReader = new Scanner(file);
         final FileWriter fw = new FileWriter(file);
         final BufferedWriter bw = new BufferedWriter(fw);
         try {
@@ -68,7 +65,7 @@ public class UnMute {
         } catch (Exception e) {
             ChatFilter.getInstance().getLogger().info("[Warning] Issue editing file in unFlaged");
         }
-        sender.sendMessage(ChatColor.GOLD + " " + player + ChatColor.DARK_GREEN + " is unFlaged");//Todo this needs a better name
+        sender.sendMessage(ChatColor.GOLD + " " + player + ChatColor.DARK_GREEN + " is unFlaged");
         ChatFilter.getInstance().getLogger().info(ChatColor.GOLD + " " + player + ChatColor.DARK_GREEN + " is unFlaged");
         readmute.Readcheck();
         reports.addlog(sender.getName(), player);

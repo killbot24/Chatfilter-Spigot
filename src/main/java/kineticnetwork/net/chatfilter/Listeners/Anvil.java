@@ -1,20 +1,14 @@
 package kineticnetwork.net.chatfilter.Listeners;
 
 import kineticnetwork.net.chatfilter.ChatFilter;
-import kineticnetwork.net.chatfilter.FileEditor.Reports;
-import kineticnetwork.net.chatfilter.MuteHandler.AddMute;
 import kineticnetwork.net.chatfilter.Notfiy;
 import kineticnetwork.net.chatfilter.Util.TextCheck;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.event.inventory.PrepareAnvilEvent;
-import org.bukkit.inventory.InventoryView;
+
 
 import java.io.IOException;
 
@@ -35,7 +29,8 @@ public class Anvil implements Listener {
                 if (tool == null) {
                     return;
                 }
-                if (check.checkmessage(e.getCurrentItem().getItemMeta().getDisplayName(), player, "Anvil", "null") == true) {
+                int checkmessage=check.checkmessage(e.getCurrentItem().getItemMeta().getDisplayName(), player, "Anvil", "null");
+                if (checkmessage !=0) {
                     e.setCancelled(true);
                 }
                 if (e.getSlotType() == InventoryType.SlotType.RESULT && tool != e.getInventory().getItem(0).getItemMeta().getDisplayName()) {

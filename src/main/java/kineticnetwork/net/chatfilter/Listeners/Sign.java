@@ -34,14 +34,18 @@ public class Sign implements Listener {
             String lines = "";
             for (int b2 = 0; b2 < line.length; ++b2) {
                 lines += "/" + line[b2];
-                if (check.checkmessage(line[b2], player, "sign", cords) == true) {
+
+                int checkmessage = check.checkmessage(line[b2], player, "sign", cords);
+                if (checkmessage != 0) {
                     e.setCancelled(true);
                     return;
                 }
             }
-            notfiy.sendsign(player, lines);
-            ChatFilter.getInstance().getLogger().info("[Chat Filter]:" + player.getName() + " Has Placed a sign with message : New line defined by / :\n" + lines);
-
+            if (!lines.equalsIgnoreCase("////")) {
+                ChatFilter.getInstance().getLogger().info("a"+lines+"a test");
+                notfiy.sendsign(player, lines);
+                ChatFilter.getInstance().getLogger().info("[Chat Filter]:" + player.getName() + " Has Placed a sign with message : New line defined by / :\n" + lines);
+            }
 
         }
     }

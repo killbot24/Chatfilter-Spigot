@@ -38,11 +38,14 @@ public class Notfiy {
         for (Player all : Bukkit.getOnlinePlayers()) {
             if (all.hasPermission("cf.see")) {
                 if (source == "Chat") {
-                    if (confirmed == false) {
-                        all.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.BLUE + "POSSIBLE FLAG" + ChatColor.DARK_GRAY + "]:\n" + ChatColor.DARK_GRAY + "[" + ChatColor.RED + "Chat Filter" + ChatColor.DARK_GRAY + "]" + ChatColor.DARK_GRAY + player.getName() + ChatColor.RED + " Has attempted to say: " + ChatColor.GRAY + message + " " + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Trigger word" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + trigger + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Reason" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + reason);
+                    if (reason=="Higher Action"){
+                        all.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "Chat Filter" + ChatColor.DARK_GRAY + "]:"+ChatColor.WHITE  + player.getName() + ChatColor.RED + " Has attempted to say: " + ChatColor.GRAY + message + " " + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Trigger word" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + trigger + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Contact Higher Staff Immediately" + ChatColor.DARK_GRAY + "]:");
+                        getLogger().info("[Chat Filter]:" + player.getName() + " Has attempted to say " + message);
+                    }else if (confirmed == false) {
+                        all.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.BLUE + "POSSIBLE FLAG" + ChatColor.DARK_GRAY + "]:\n" + ChatColor.DARK_GRAY + "[" + ChatColor.RED + "Chat Filter" + ChatColor.DARK_GRAY + "]" + ChatColor.WHITE  + player.getName() + ChatColor.RED + " Has attempted to say: " + ChatColor.GRAY + message + " " + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Trigger word" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + trigger + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Reason" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + reason);
                         getLogger().info("[Chat Filter]:" + player.getName() + " Has attempted to say " + message);
                     } else {
-                        all.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "Chat Filter" + ChatColor.GRAY + "]:" + player.getName() + ChatColor.RED + " Has attempted to say: " + ChatColor.GRAY + message + " " + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Trigger word" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + trigger + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Reason" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + reason);
+                        all.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "Chat Filter" + ChatColor.DARK_GRAY + "]:"+ChatColor.WHITE  + player.getName() + ChatColor.RED + " Has attempted to say: " + ChatColor.GRAY + message + " " + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Trigger word" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + trigger + ChatColor.DARK_GRAY + "\n[" + ChatColor.RED + "Reason" + ChatColor.DARK_GRAY + "]:" + ChatColor.WHITE + reason);
                         getLogger().info("[Chat Filter]:" + player.getName() + " Has attempted to say " + message);
                     }
                 } else if (source == "Anvil") {

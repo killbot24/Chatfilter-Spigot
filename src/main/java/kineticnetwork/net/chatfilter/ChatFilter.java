@@ -15,6 +15,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 public final class ChatFilter extends JavaPlugin {
     public static ChatFilter instance;
@@ -26,15 +27,6 @@ public final class ChatFilter extends JavaPlugin {
     public static String URL;
     public static int MuteMethod;
     public static String[] Watch;//Active watch
-
-    public static String[] getMutes() {
-        return Mutes;
-    }
-
-    public static void setMutes(String[] mutes) {
-        Mutes = mutes;
-    }
-
 
     public ChatFilter() {
         instance = this;
@@ -48,6 +40,7 @@ public final class ChatFilter extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
         this.getLogger().info("Loading config");
         config config = new config();
         config.Config();
@@ -57,7 +50,6 @@ public final class ChatFilter extends JavaPlugin {
         try {
             for (int i = 0; i < input.size(); i++) {//Take config split by , addinto list
                 String[] split = input.get(i).split(",");
-                //  this.getLogger().info(split.length+" "+split[0]);
                 Blacklisted.put(split[0], split[1]);
             }
         } catch (Exception e) {
@@ -67,7 +59,6 @@ public final class ChatFilter extends JavaPlugin {
         // Url
         URL = getInstance().getConfig().getString("url");
         MuteMethod = ChatFilter.getInstance().getConfig().getInt("Mute Method");
-
 
         this.getLogger().info("Loading mutes");
         ReadMute readmute = new ReadMute();

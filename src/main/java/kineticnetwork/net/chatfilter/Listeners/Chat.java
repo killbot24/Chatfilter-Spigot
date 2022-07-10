@@ -19,20 +19,22 @@ public class Chat implements Listener {
         String input = event.getMessage().toLowerCase();
         final Player player = event.getPlayer();
 
-        boolean muted = checkmute.CheckMute(player);
-        if (muted == true) {
+        if (checkmute.CheckMute(player) == true) {
             event.setCancelled(true);
             return;
         }
 
         TextCheck check = new TextCheck();
-        if (check.checkmessage(input, player, "Chat", "null") == true) {
-            if (ChatFilter.MuteMethod == 2) {
+        int checkmessage= check.checkmessage(input, player, "Chat", "null");
+        if (checkmessage == 1||checkmessage==2) {
+            if (checkmessage==1) {// 1 = possible flag, 2 confirmed flag
+                player.sendMessage("Your message has been flagged by chatfilter.");
                 event.getRecipients().clear();
                 event.getRecipients().add(player);
                 return;
+            }else {
+                event.setCancelled(true);// cancels message
             }
-            event.setCancelled(true);// cancels message
         }
 
     }

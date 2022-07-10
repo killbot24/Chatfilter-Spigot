@@ -19,7 +19,8 @@ public class Command implements Listener {
         if (message[0].equalsIgnoreCase("/msg") || message[0].equalsIgnoreCase("/whisper") || message[0].equalsIgnoreCase("/tell") || message[0].equalsIgnoreCase("/mail")) {
             fullmessage = event.getMessage();
             TextCheck check = new TextCheck();
-            if (check.checkmessage(fullmessage, player, "Message", "null") == true) {
+            int checkmessage=check.checkmessage(fullmessage, player, "Message", "null");
+            if (checkmessage !=0) {
                 event.setCancelled(true);// cancels message
             }
         }

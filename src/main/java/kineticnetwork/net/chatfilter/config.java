@@ -8,12 +8,12 @@ public class config {
 
     public void Config() {
         try {
-            final String[] list = {"banana, I dont like this", "panda, Its tasty", "placeholder,You can guess"};
+            final String[] list = {"noot, I dont like this", "bob, Its tasty", "john,You can guess"};
             final String url = "Noot noot!";
             ChatFilter.config.options().header("Blocked words can not contain capitals. The following format must be followed \n Word,Reason eg'penguin, he have flipper' \n Method 1 standard mute will use for signs and anvil, Method 2 will only show for sender  ");
             ChatFilter.config.addDefault("Blocked words", (Object) list);
             ChatFilter.config.addDefault("url", url);
-            ChatFilter.config.addDefault("Mute Method", 1);
+           // ChatFilter.config.addDefault("Mute Method", 1);
             ChatFilter.config.options().copyDefaults(true);
             ChatFilter.instance.saveConfig();
         } catch (Exception e) {
