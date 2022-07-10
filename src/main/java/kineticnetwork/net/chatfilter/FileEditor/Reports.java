@@ -44,9 +44,9 @@ public class Reports {
             final List<?> infraction = Files.readAllLines(file.toPath());
             String[] user = new String[infraction.size()];
             user = infraction.toArray(user);
-            sender.sendMessage(ChatColor.GOLD + "Player's infraction");
+            sender.sendMessage(ChatColor.GOLD + "Player's infraction \n");
             for (int i = 0; i < user.length; ++i) {
-                sender.sendMessage(ChatColor.GRAY + user[i]);
+                sender.sendMessage("\n"+ChatColor.GRAY + user[i]);
             }
             myReader.close();
 
