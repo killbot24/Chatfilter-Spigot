@@ -21,7 +21,7 @@ public class Anvil implements Listener {
 
         final Player player = (Player) e.getWhoClicked();
         String tool = null;
-
+        
         if (e.getInventory().getType() == InventoryType.ANVIL && e.getInventory().getItem(0) != null) {
             try {
                 tool = e.getCurrentItem().getItemMeta().getDisplayName();

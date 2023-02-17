@@ -1,5 +1,6 @@
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\Referancecommand.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\Notfiy.java
+C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\DataBase\Connections.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\Listeners\Anvil.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\Listeners\Sign.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\Reload.java
@@ -7,6 +8,7 @@ C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\n
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\Listeners\Command.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\MuteHandler\ReadMute.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\unmute.java
+C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\DataBase\CreateTables.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\check.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\config.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\MuteHandler\CheckMute.java
@@ -15,6 +17,7 @@ C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\n
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\list.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\MuteHandler\UnMute.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\MuteHandler\AddMute.java
+C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\DataBase\DataBaseSetup.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\commands\Help.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\ChatFilter.java
 C:\Users\tjbur\Documents\GitHub\Chatfilter-1.16.5\src\main\java\kineticnetwork\net\chatfilter\FileEditor\Reports.java

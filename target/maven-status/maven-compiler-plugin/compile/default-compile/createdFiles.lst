@@ -1,8 +1,13 @@
 kineticnetwork\net\chatfilter\Util\TextCheck.class
 kineticnetwork\net\chatfilter\commands\list.class
-kineticnetwork\net\chatfilter\MuteHandler\CheckMute.class
 kineticnetwork\net\chatfilter\Listeners\Anvil.class
 kineticnetwork\net\chatfilter\Listeners\Sign.class
+kineticnetwork\net\chatfilter\DataBase\Connections.class
+kineticnetwork\net\chatfilter\DataBase\DataBaseSetup.class
+kineticnetwork\net\chatfilter\DataBase\CreateTables.class
+kineticnetwork\net\chatfilter\MuteHandler\ReadMute.class
+kineticnetwork\net\chatfilter\config.class
+kineticnetwork\net\chatfilter\MuteHandler\CheckMute.class
 kineticnetwork\net\chatfilter\ChatFilter.class
 kineticnetwork\net\chatfilter\commands\check.class
 kineticnetwork\net\chatfilter\commands\unmute.class
@@ -12,9 +17,7 @@ kineticnetwork\net\chatfilter\commands\Help.class
 kineticnetwork\net\chatfilter\commands\Reload.class
 kineticnetwork\net\chatfilter\Notfiy.class
 kineticnetwork\net\chatfilter\MuteHandler\AddMute.class
-kineticnetwork\net\chatfilter\MuteHandler\ReadMute.class
 kineticnetwork\net\chatfilter\commands\Referancecommand.class
 kineticnetwork\net\chatfilter\commands\unflag.class
 kineticnetwork\net\chatfilter\FileEditor\Reports.class
 kineticnetwork\net\chatfilter\Listeners\Command.class
-kineticnetwork\net\chatfilter\config.class
