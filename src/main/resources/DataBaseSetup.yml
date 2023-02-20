@@ -1,0 +1,8 @@
+CREATE DATABASE `chatfilter`[IF NOT EXISTS] /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE TABLE [IF NOT EXISTS] `chatfilter` (
+  `UUID` int(11) NOT NULL,
+  `Muted` tinyint(4) DEFAULT NULL,
+  `Flaged` tinyint(4) DEFAULT NULL,
+  `Infractions` multilinestring DEFAULT NULL,
+  PRIMARY KEY (`UUID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

@@ -9,7 +9,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://E:/kinetic/servers/1.16.5/plugins/classes" />
     <output-test url="file://E:/kinetic/servers/1.16.5/plugins/test-classes" />
     <content url="file://$MODULE_DIR$">

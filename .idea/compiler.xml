@@ -10,7 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Chat-filter" target="1.8" />
+      <module name="Chat-filter" target="11" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chat-filter" options="" />
+    </option>
   </component>
 </project>
