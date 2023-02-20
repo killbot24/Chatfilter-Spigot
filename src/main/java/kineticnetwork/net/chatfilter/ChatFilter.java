@@ -1,5 +1,8 @@
 package kineticnetwork.net.chatfilter;
 
+import com.mysql.cj.jdbc.MysqlConnectionPoolDataSource;
+import com.mysql.cj.jdbc.MysqlDataSource;
+import kineticnetwork.net.chatfilter.DataBase.Connections;
 import kineticnetwork.net.chatfilter.DataBase.DataBaseSetup;
 import kineticnetwork.net.chatfilter.Listeners.Anvil;
 import kineticnetwork.net.chatfilter.Listeners.Chat;
@@ -13,7 +16,9 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.IOException;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,20 +26,13 @@ import java.util.UUID;
 
 public final class ChatFilter extends JavaPlugin {
     public static ChatFilter instance;
-   // public static FileConfiguration config;
     public static String[] Mutes;//Active mutes
     public static String URL;
+    public static boolean databaseEnabled;
     public static Map<String, String> Blacklisted = new HashMap<String, String>();
     public static String[] Watch;//Active watch
     //DataBase vars.
-    public static boolean UseDatabase;
-  //  public static String username=""; // Enter in your db username
-  //  public static String Ip=""; // Enter in your db ip
-  //  public static String database=""; // Enter in your db name
-  //  public static String password=""; // Enter your password for the db
-    public static String url = "jdbc:mysql://localhost/chatfilter"; // Enter URL with db name
-    //Connection vars
-    public static Connection connection; //This is the variable we will use to connect to database
+    public static MysqlDataSource dataSource = new MysqlConnectionPoolDataSource();
 
     public static ChatFilter getInstance() {
         return instance;
@@ -42,34 +40,23 @@ public final class ChatFilter extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
         instance = this;
         config config=new config();
-        config.Config();
+        this.getConfig().options().copyDefaults(true);
+        this.saveDefaultConfig();
+
         config.loadConfig();
-       // List<String> input = (List<String>) this.getConfig().getList("Blocked words");
-        /*
-        username = (String) this.getConfig().get("Username");
-        password = (String) this.getConfig().get("Password");
-        Ip = (String) this.getConfig().get("IP");
-        database = (String) this.getConfig().get("Database");
-        UseDatabase = this.getConfig().getBoolean("Enabled");
-        if (UseDatabase){
-            this.getLogger().info("Loading databases");
+        if (databaseEnabled){
             DataBaseSetup db=new DataBaseSetup();
-            db.DataBaseSetup();
-        }
-        */
-      /*  try {
-            for (int i = 0; i < input.size(); i++) {//Take config split by , addinto list
-                String[] split = input.get(i).split(",");
-                Blacklisted.put(split[0], split[1]);
+            try {
+                db.DataBaseSetup();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            this.getLogger().info("Incorrect format for config followed!");
         }
-*/
-
-
         // Url
         URL = getInstance().getConfig().getString("url");
        // MuteMethod = ChatFilter.getInstance().getConfig().getInt("Mute Method");
@@ -92,16 +79,7 @@ public final class ChatFilter extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
         Bukkit.getScheduler().cancelTasks(this);
+
     }
 
-    public static void reload() {
-        ChatFilter.getInstance().reloadConfig();
-        List<String> input = (List<String>) ChatFilter.getInstance().getConfig().getList("Blocked words");
-        getInstance().getLogger().info(input + " list");
-        for (int i = 0; i < input.size(); i++) {//Take config split by , addinto list
-            String[] split = input.get(i).split(",");
-            Blacklisted.put(split[0], split[1]);
-        }
-        URL = getInstance().getConfig().getString("url");
-    }
 }
